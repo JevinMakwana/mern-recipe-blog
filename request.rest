@@ -1,0 +1,36 @@
+POST http://localhost:3001/auth/register
+content-type: application/json
+
+{
+    "username":"gtx",
+    "password":"newpass"
+}  
+
+###
+
+POST http://localhost:3001/auth/login
+content-type: application/json
+
+{
+    "username":"gtx",
+    "password":"newpass"
+}  
+
+###
+
+POST http://localhost:3001/recipes
+content-type: application/json
+
+{
+    "name": "Steak",
+    "ingredients": ["biff", "salt", "pepper"],
+    "instructions": "cook at mid flame for 10 minutes.",
+    "imageUrl": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.averiecooks.com%2Fwp-content%2Fuploads%2F2021%2F01%2Fgarlicbutterchicken-5.jpg&tbnid=94M51S3ILkDM3M&vet=12ahUKEwjWyLmQ5P79AhWrodgFHeR1AooQMygGegUIARCOAg..i&imgrefurl=https%3A%2F%2Fwww.averiecooks.com%2Fgarlic-butter-chicken%2F&docid=aC3ND4q6FIM6GM&w=650&h=975&q=recipe&ved=2ahUKEwjWyLmQ5P79AhWrodgFHeR1AooQMygGegUIARCOAg",
+    "cookingTime": "10",
+    "userOwner": "64228bbf9353be6194d24838"
+    
+}
+
+###
+
+GET http://localhost:3001/recipes
